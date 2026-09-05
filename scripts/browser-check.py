@@ -11,7 +11,7 @@ async def load(page,path):
  # Browser network navigation is restricted here. Render exact build output offline.
  file=ROOT/'dist'/('404.html' if path=='/does-not-exist/' else path.lstrip('/')+'index.html')
  html=file.read_text()
- styles='\n'.join((ROOT/'dist/styles'/f'{x}.css').read_text() for x in ['base','components','pages','responsive'])
+ styles='\n'.join((ROOT/'dist/styles'/f'{x}.css').read_text() for x in ['base','components','pages','responsive','imagery'])
  def data(path):
   content=(ROOT/'dist'/path.lstrip('/')).read_bytes()
   return 'data:image/avif;base64,'+base64.b64encode(content).decode()
@@ -46,7 +46,8 @@ async def main():
      await img.scroll_into_view_if_needed()
      await page.wait_for_timeout(70)
      assert await img.evaluate('(e)=>e.complete&&e.naturalWidth>0'),(path,'broken image')
-    await page.evaluate('scrollTo(0,0)')
+    await page.evaluate('document.activeElement?.blur(); scrollTo({top:0,behavior:"instant"})')
+    await page.wait_for_timeout(80)
     report['viewports'].append({'width':width,'path':path,'status':status,'overflow':overflow})
     if (width in [390,1440] and path in ['/','/attorneys/','/contact/']):
      name=f'{"home" if path=="/" else path.strip("/")}-{width}.png'

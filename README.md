@@ -14,7 +14,7 @@ npm run dev
 Open **http://localhost:4173**. Source changes rebuild automatically; refresh the browser. Set `PORT` to change the local port. The local server binds to loopback only.
 
 ```sh
-npm run check     # syntax checks, static build, and 19 structural tests
+npm run check     # syntax checks, static build, and structural/imagery tests
 npm run build     # generated HTML and assets in dist/
 npm run preview   # serve the built concept on localhost:4173
 ```
@@ -23,7 +23,7 @@ npm run preview   # serve the built concept on localhost:4173
 
 12 navigable pages plus a custom 404: homepage, practice-area index and four draft practice pages, attorney index and individual pages for J.R. Oviedo and Bradley Stevens, firm/about, contact, and design review. Mobile navigation supports keyboard Escape and focus restoration. Content is real HTML; navigation does not depend on a client-side router. Reduced-motion preferences are respected.
 
-The provided mockups are included as optimized AVIF reference copies in `public/images/`. The conceptual office image is a crop from the homepage mockup, clearly labeled as AI-generated. The original full-resolution PNGs are supplied separately with the handoff archive; their source hashes are recorded in `design/assets.json`.
+The provided mockups are included as optimized AVIF reference copies in `public/images/`. Four approved standalone scene images now supply the homepage, inner-page heroes, and supporting sections. They are optimized AVIF files with intentional mobile crops, loading priorities, and visible conceptual-image labels. The old mockup crop is retained as an archival asset only. The original full-resolution PNGs are supplied separately with the handoff archive; their source hashes are recorded in `design/assets.json`.
 
 ## Preview safeguards
 
@@ -45,15 +45,17 @@ Generated attorney faces are retained only inside the labeled reference mockups.
 | Shared component styling | `src/styles/components.css` |
 | Page layouts | `src/styles/pages.css` |
 | Mobile/tablet behavior | `src/styles/responsive.css` |
+| Scene registry, alt text, credits, loading | `src/imagery.mjs` |
+| Image overlays and mobile crop layouts | `src/styles/imagery.css` |
 | Mobile navigation behavior | `public/app.js` |
 | Content verification and launch gate | `docs/CONTENT-APPROVAL.md` |
 
 Keep source files below 400 lines. Edit source, not `dist/`. Preview protections are deliberately **not** switched off by a single boolean: a production launch requires coordinated approval, metadata, header, privacy, and intake work.
 
-## Vercel-ready, not deployed
+## Vercel setup
 
 Import `Kodaxadev/olg` as a **new review project**. Framework preset: **Other**. Build command: `npm run build`. Output directory: `dist`. Select Node.js 22.x. The included `vercel.json` supplies the static build and response headers. No environment variables are required. Use deployment protection for private review; do not replace the existing firm website.
 
 ## Verification
 
-`docs/QA.md` records the checks performed. GitHub Actions is configured for the dependency-free build and structural tests. No live-firm domain, email account, database, DNS record, or existing deployment was changed.
+`docs/QA.md` records the checks performed. GitHub Actions is configured for the dependency-free build and structural tests. The existing law firm’s domain, email, database, and DNS are outside this concept’s scope. The owner’s review deployment uses `olg.kodaxa.dev`. Repository changes can trigger its configured hosting integration; check the actual deployment status before claiming an update is live.

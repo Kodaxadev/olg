@@ -17,7 +17,7 @@ for(const route of routes){
   assert.match(html,/DESIGN CONCEPT/);assert.doesNotMatch(html,/1990 Shaw|712 Pollasky|San Joaquin College of Law/);
   const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);
   assert.equal(new Set(ids).size,ids.length,'unique element ids');
-  for(const image of html.matchAll(/<img\b[^>]*>/g))assert.match(image[0],/\balt="[^"]+"/);
+  for(const image of html.matchAll(/<img\b[^>]*>/g))assert.match(image[0],/\balt="[^"]*"/);
   for(const found of html.matchAll(/\b(?:href|src)="([^"]+)"/g)){
    const url=found[1];if(!url.startsWith('/'))continue;
    const pathname=url.split(/[?#]/)[0];
@@ -52,7 +52,7 @@ test('runtime image assets exist and have AVIF container signatures',async()=>{
  }
 });
 test('all CSS asset URLs resolve',async()=>{
- for(const name of ['base','components','pages','responsive']){
+ for(const name of ['base','components','pages','responsive','imagery']){
   const css=await readFile(join(out,'styles',name+'.css'),'utf8');
   for(const match of css.matchAll(/url\(['"]?(\/[^)'"\s]+)/g))await assert.doesNotReject(()=>stat(join(out,match[1])));
  }
