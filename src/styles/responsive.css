@@ -1,0 +1,87 @@
+@media(min-width:1600px){.hero-image{left:42%}.hero-inner,.hero{min-height:680px}}
+@media(max-width:1150px){
+ .header-inner{gap:24px}.desktop-nav{gap:20px}.header-phone{padding-left:18px}.header-phone>span{display:none}
+ .wordmark>span{font-size:29px}.header-inner{min-height:92px}
+ .hero-inner,.hero{min-height:590px}.hero h1{font-size:67px}
+ .intro-strip-inner{gap:28px;grid-template-columns:1fr 1.2fr}.intro-strip .text-link{display:none}
+ .practice-card{padding-inline:20px}.practice-card h3{font-size:25px}
+ .attorney-home-grid{gap:25px}.attorney-intro{padding-right:8px}.attorney-intro h2{font-size:40px}
+ .attorney-caption h3{font-size:27px}.attorney-intro .button{gap:10px;padding-inline:12px}
+ .local-section{grid-template-columns:1.5fr 1fr;gap:45px}.local-label{display:none}
+ .footer-main{gap:40px}.footer .wordmark>span{font-size:27px}
+ .profile-grid,.practice-detail,.about-intro,.process-section,.contact-grid,.review-layout{gap:50px}
+ .contact-grid{grid-template-columns:1fr 1.1fr}.intake-preview{padding:26px}.form-row{grid-template-columns:1fr;gap:0}
+}
+@media(max-width:900px){
+ .js .desktop-nav{display:none}.js .menu-toggle{display:flex}.header-phone{margin-left:auto;border:0;padding-left:0}.header-phone>span{display:inline}
+ .header-inner{min-height:87px;flex-wrap:wrap;gap:20px}.desktop-nav{order:4;width:100%;margin:0;justify-content:space-between}
+ .concept-extra{display:none}.utility-inner{gap:22px}.utility-end{font-size:10px}
+ .hero-inner,.hero{min-height:580px}.hero-copy{max-width:600px}.hero h1{font-size:64px}
+ .hero-image{left:23%;opacity:.7}.hero-shade{background:linear-gradient(90deg,#102730 2%,#102730ed 30%,#10273095 70%,#10273055)}
+ .section{padding-block:76px}.section-heading{gap:26px}.section-heading>p{max-width:240px;font-size:12px}
+ .practice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.practice-card{padding:28px!important}
+ .practice-card:nth-child(2){border-right:0}.practice-card:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .practice-card h3{font-size:27px;min-height:0;max-width:230px}.practice-card>p{max-width:270px}
+ .attorney-home-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 30px}
+ .attorney-intro{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:20px 40px;padding:0;align-items:start}
+ .attorney-intro .eyebrow{grid-column:1/-1;margin:0}.attorney-intro h2{grid-row:2/4;font-size:46px}.attorney-intro h2 br:nth-child(2){display:none}
+ .attorney-intro>p:not(.eyebrow){margin:0;max-width:320px}.attorney-intro .accent-rule{display:none}.attorney-intro .button{justify-self:start}
+ .attorneys-section{padding-block:65px}.portrait{aspect-ratio:1/1.12}.portrait-monogram{font-size:100px}
+ .values-section{padding-block:62px}.values-grid article{padding-inline:25px}.values-grid h3{font-size:23px}.values-grid p{font-size:12px}
+ .values-heading{display:block}.values-heading h2{font-size:40px}.values-heading .eyebrow{margin-bottom:22px}
+ .local-section{gap:35px}.local-section h2{font-size:35px}.contact-band-inner{gap:45px}.contact-band h2{font-size:38px}
+ .footer-main{grid-template-columns:1.1fr 1fr;gap:40px}.footer-nav{grid-column:1/-1;flex-direction:row;gap:24px;flex-wrap:wrap}.footer-legal{gap:35px}
+ .profile-grid{grid-template-columns:.8fr 1.2fr;gap:35px}.profile-copy .lead{font-size:17px}
+ .practice-detail{gap:35px}.contact-panel{padding:25px}.contact-panel h3{font-size:27px}
+ .about-intro,.process-section{gap:50px}.contact-grid{grid-template-columns:1fr;gap:50px}.contact-details{max-width:650px}.contact-details>.small-note{max-width:600px}
+ .form-row{grid-template-columns:1fr 1fr;gap:20px}.intake-preview{padding:35px}
+ .review-layout{grid-template-columns:1fr;gap:40px}.review-summary{max-width:550px;width:100%}
+}
+@media(max-width:600px){
+ :root{--gutter:24px}html{scroll-padding-top:90px}
+ .concept-banner{padding:3px 16px;font-size:9px;min-height:31px}.concept-banner strong{font-size:8px}.concept-banner a{font-size:9px}
+ .utility-inner{padding-inline:24px;min-height:36px;justify-content:space-between;font-size:10px;gap:10px}.utility-end{display:none!important}
+ .header-inner{min-height:81px;gap:12px}.wordmark>span{font-size:27px}.wordmark small{font-size:6px;letter-spacing:.25em}
+ .header-phone{display:none}.js .menu-toggle{margin-left:auto;padding-right:0;gap:10px}.menu-label{font-size:10px}
+ .desktop-nav{gap:14px}.desktop-nav a{font-size:11px}
+ .hero,.hero-inner{min-height:625px}.hero-inner{padding-block:47px 96px;align-items:flex-start}.hero-image{inset:0 0 0 0;opacity:.67;background-position:65% center}
+ .hero-shade{background:linear-gradient(90deg,#102730ed,#1027309c 80%),linear-gradient(0deg,#102730ae,transparent 50%)}
+ .hero .eyebrow{font-size:8px;letter-spacing:.17em;margin-bottom:30px}.hero h1{font-size:51px;line-height:1.09}
+ .hero-copy>p:not(.eyebrow){font-size:14px;margin-top:26px;line-height:1.9}
+ .hero-actions{flex-direction:column;align-items:flex-start;gap:12px;margin-top:26px}.hero .button{font-size:12px;min-height:50px}
+ .hero-secondary{min-height:45px;font-size:12px}.hero-principles{font-size:6.5px;gap:10px;letter-spacing:.13em;margin-top:29px}
+ .hero-principles>span{width:22px}.image-credit{font-size:6px;right:24px;bottom:20px;max-width:calc(100% - 48px)}
+ .intro-strip-inner{grid-template-columns:1fr;gap:15px;padding-block:28px}.intro-strip p:first-child{font-size:23px}.intro-strip p:nth-child(2){font-size:13px;max-width:none}
+ .section{padding-block:61px}.section-heading{display:block;margin-bottom:32px}.section-heading>p{margin-top:25px;max-width:none}
+ .section-heading h2,h2{font-size:37px}.eyebrow{font-size:8px;letter-spacing:.2em;margin-bottom:20px}
+ .practice-grid{grid-template-columns:1fr}.practice-card{border-right:0!important;border-bottom:1px solid var(--line);padding:28px 0!important}
+ .practice-card:last-child{border-bottom:0}.practice-card h3{font-size:29px;max-width:none;margin-bottom:13px}.practice-card>p{max-width:none;margin-bottom:13px;font-size:14px}
+ .practice-top{margin-bottom:21px}.practice-top>.icon{width:29px;height:29px}.practice-card .text-link{font-size:9px}
+ .review-note{font-size:10px;gap:9px;margin-top:20px}
+ .attorneys-section{padding-block:59px}.attorney-home-grid{grid-template-columns:1fr;gap:38px}.attorney-intro{display:block}
+ .attorney-intro .eyebrow{margin-bottom:20px}.attorney-intro h2{font-size:43px}.attorney-intro h2 br:nth-child(2){display:inline}
+ .attorney-intro>p:not(.eyebrow){font-size:14px;max-width:none;margin:24px 0}.attorney-intro .button{padding-inline:22px;font-size:12px}
+ .portrait{aspect-ratio:1/1.05}.portrait-monogram{font-size:120px}.portrait-caption{font-size:7px}
+ .attorney-caption{padding-top:22px}.attorney-caption h3{font-size:32px}.attorney-caption p:not(.eyebrow){font-size:14px;max-width:none;min-height:0}.attorney-caption .text-link{font-size:10px}
+ .values-section{padding-block:57px}.values-heading{margin-bottom:35px}.values-heading h2{font-size:37px}.values-grid{grid-template-columns:1fr;gap:30px}
+ .values-grid article{padding:0 0 29px!important;border-right:0;border-bottom:1px solid #ffffff29}.values-grid article:last-child{padding-bottom:0!important;border:0}
+ .values-grid .icon{margin-bottom:17px;width:29px;height:29px}.values-grid h3{font-size:27px;margin-bottom:13px}.values-grid p{max-width:none;font-size:14px}
+ .local-section{padding-block:59px;grid-template-columns:1fr;gap:30px}.local-section h2{font-size:35px}.local-section>div>p:not(.eyebrow){font-size:14px}
+ .location-card{border:0;border-top:1px solid var(--line);padding:25px 0 0}.location-card>span{max-width:none;font-size:8px}
+ .contact-band{padding-block:48px}.contact-band-inner{grid-template-columns:1fr;gap:30px}.contact-band h2{font-size:39px}.contact-band p:not(.eyebrow){font-size:14px;margin-bottom:23px}
+ .footer{padding-top:49px}.footer-main{grid-template-columns:1fr;gap:33px;padding-bottom:33px}.footer .wordmark>span{font-size:31px}
+ .footer-tagline{font-size:22px;margin-top:24px}.footer-nav{grid-column:auto;display:grid;grid-template-columns:1fr 1fr;gap:5px 20px}.footer-nav a{font-size:12px;min-height:40px}
+ .footer-legal{flex-direction:column;gap:18px;font-size:10px}.footer-tel{font-size:21px}
+ .subhero{padding:20px 0 50px}.subhero .eyebrow{margin-top:29px;font-size:8px}.subhero h1{font-size:44px;line-height:1.14;overflow-wrap:break-word}.subhero-copy{font-size:14px;line-height:1.85;margin-top:23px}
+ .subhero-mark{font-size:210px;bottom:-10px}.attorney-index-grid{grid-template-columns:1fr;gap:42px}.attorney-index-grid .portrait-monogram{font-size:125px}
+ .profile-grid{grid-template-columns:1fr;gap:45px}.profile-grid aside{max-width:420px;width:100%;margin-inline:auto}.profile-copy .lead{font-size:18px}
+ .credentials dd{font-size:14px}.profile-copy h2{font-size:38px}.profile-copy .text-link{font-size:9px;gap:12px}
+ .practice-detail,.about-intro,.process-section{grid-template-columns:1fr;gap:40px}.practice-detail .lead{font-size:18px}.contact-panel{padding:29px}.contact-panel h3{font-size:31px}
+ .about-intro .lead{font-size:18px}.about-intro>div>p:not(.lead):not(.eyebrow){font-size:14px}.process-list p{font-size:14px}
+ .contact-grid{gap:37px}.large-phone{font-size:35px;gap:17px}.contact-details address{font-size:16px}.intake-preview{padding:24px 20px}
+ .form-heading{align-items:flex-start;gap:15px}.form-heading .eyebrow{max-width:140px;font-size:8px}.preview-pill{font-size:7px}
+ .form-row{grid-template-columns:1fr;gap:0}.intake-preview>h3{font-size:29px}.intake-preview input,.intake-preview select{font-size:16px}
+ .intake-preview .button{font-size:10px;padding-inline:12px;gap:10px}.review-layout{gap:34px}.review-layout .lead{font-size:18px}.review-layout article>p:not(.lead),.review-list{font-size:14px}
+ .review-summary{padding:28px}.mockup-grid{grid-template-columns:1fr;gap:36px}.mockups-section>p:not(.eyebrow){font-size:13px}
+}
+@media(max-width:359px){.hero h1{font-size:44px}.wordmark>span{font-size:24px}.menu-label{display:none}.large-phone{font-size:31px}.hero-principles{font-size:5.8px}}

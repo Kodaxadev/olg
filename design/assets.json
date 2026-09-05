@@ -1,0 +1,46 @@
+{
+  "originals": {
+    "oviedo_law_group_california_homepage.png": {
+      "sha256": "6226f0724a1e163feb83da09cea6a0984b8ca7857fd0c41960824eae030d13b0",
+      "bytes": 1738484,
+      "dimensions": [
+        935,
+        1683
+      ]
+    },
+    "oviedo_law_group_attorneys_page.png": {
+      "sha256": "aaa8db9303562bdd80736816f9dd5d1bec3c34dd4e9074d28e3f2f3bbe58d3fc",
+      "bytes": 1792487,
+      "dimensions": [
+        935,
+        1683
+      ]
+    }
+  },
+  "repoAssets": {
+    "homepage-concept.avif": {
+      "sha256": "d7e676b8ba80b560d5808494063895e860906cba3e466d213a7a4be8f0f05595",
+      "bytes": 10299,
+      "dimensions": [
+        480,
+        864
+      ]
+    },
+    "office-study.avif": {
+      "sha256": "8a795a220bdd9ca9be450b0841d33c3d21e83f19c03bcc4a81a583ac927aa9aa",
+      "bytes": 6038,
+      "dimensions": [
+        482,
+        409
+      ]
+    },
+    "attorneys-concept.avif": {
+      "sha256": "9062202d8d77c742d8262ff778e447e5327273c7c55fe91a5a4c35c0bd4651e6",
+      "bytes": 11376,
+      "dimensions": [
+        480,
+        864
+      ]
+    }
+  }
+}

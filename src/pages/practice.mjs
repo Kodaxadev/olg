@@ -1,0 +1,8 @@
+import {practices} from '../data.mjs';
+import {icon} from '../icons.mjs';
+import {e,eyebrow,subhero,practiceCards,button,cta,reviewNote} from '../components.mjs';
+export const practiceIndex=()=>`${subhero('The practice','A clear place<br><em>to begin.</em>','A proposed practice structure built around the people and matters reflected in the firm’s existing public materials.')}<section class="section shell"><div class="section-heading"><div>${eyebrow('Proposed areas of representation')}<h2>What brings<br><em>you here?</em></h2></div><p>The final service list will be confirmed by the firm.<br>Contact the office for current case acceptance.</p></div>${practiceCards()}${reviewNote()}</section>${cta()}`;
+export function practiceDetail(slug){
+ const p=practices.find(x=>x.slug===slug);if(!p)throw new Error(`Unknown practice: ${slug}`);
+ return `${subhero('Practice overview · draft',e(p.title),p.short)}<section class="section shell practice-detail"><article>${eyebrow('A considered approach')}<h2>Your situation.<br><em>A clear next step.</em></h2><p class="lead">${e(p.description)}</p><h3 class="subheading">Proposed topics for this page</h3><ul class="matter-list">${p.matters.map(m=>`<li>${icon('arrow')}${e(m)}</li>`).join('')}</ul>${reviewNote(p.note)}<p>This design preview does not provide legal guidance or determine whether the firm can accept a particular matter.</p></article><aside class="contact-panel">${icon(p.icon)}${eyebrow('Start with a conversation')}<h3>Every matter<br>has its own context.</h3><p>Speak with the office about its current practice and the appropriate next step.</p>${button('Contact the office','/contact/')}<a class="text-link" href="/practice-areas/">All practice areas ${icon('arrow')}</a></aside></section>${cta()}`;
+}
