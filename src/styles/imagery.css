@@ -20,21 +20,6 @@
   background: linear-gradient(90deg, #102730f5 0%, #102730e8 24%, #102730c4 42%, #10273059 65%, #1027300d 100%),
     linear-gradient(0deg, #10273066, transparent 35%);
 }
-.media-credit {
-  position: absolute;
-  right: var(--gutter);
-  bottom: 20px;
-  z-index: 2;
-  max-width: calc(100% - 48px);
-  margin: 0;
-  padding: 5px 9px;
-  background: #0c2029e8;
-  color: #e4e9e7;
-  font: 500 8px/1.6 var(--sans);
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  pointer-events: none;
-}
 .subhero--photo {padding-bottom: 85px;}
 .subhero-image {z-index: -3; object-position: 65% 58%;}
 .subhero--photo::before {
@@ -59,11 +44,6 @@
 .about-scene {padding-bottom: 85px;}
 .editorial-scene {position: relative; overflow: hidden; background: var(--navy);}
 .editorial-scene img {width: 100%; height: clamp(260px, 33vw, 420px); object-fit: cover; object-position: 50% 60%;}
-.editorial-scene figcaption {
-  position: absolute; right: 16px; bottom: 14px; max-width: calc(100% - 32px);
-  color: #e4e9e7; background: #0c2029e8; padding: 5px 9px;
-  font: 500 8px/1.6 var(--sans); letter-spacing: .12em; text-transform: uppercase;
-}
 @media (max-width: 900px) and (min-width: 601px) {
   .hero-image {object-position: 63% 58%;}
   .hero-shade {background: linear-gradient(90deg, #102730f2, #102730de 42%, #10273059 100%);}
@@ -79,7 +59,6 @@
     opacity: 1; object-position: 68% 64%;
   }
   .hero-shade {display: none;}
-  .hero .media-credit {bottom: 13px; right: 16px; max-width: calc(100% - 32px);}
   .hero .eyebrow {margin-bottom: 23px;}
   .hero-principles {margin-top: 24px;}
   .subhero--photo {display: flex; flex-direction: column; padding: 0;}
@@ -89,12 +68,9 @@
     object-position: 68% 60%;
   }
   .subhero--photo::before {display: none;}
-  .subhero--photo .media-credit {bottom: 12px; right: 16px; max-width: calc(100% - 32px); font-size: 7px;}
   .values-section--photo {padding-bottom: 75px;}
   .values-section--photo .section-media {object-position: 72% 50%;}
   .values-section--photo::before {background: linear-gradient(180deg, #1027309e, #102730c4 50%, #102730e8);}
-  .values-section--photo .media-credit {font-size: 7px; right: 16px; bottom: 16px;}
   .about-scene {padding-bottom: 55px;}
   .editorial-scene img {height: 255px; object-position: 62% 60%;}
-  .editorial-scene figcaption {font-size: 7px;}
 }
